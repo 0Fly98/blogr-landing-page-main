@@ -1,0 +1,714 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+html {
+  width: 100% !important;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+}
+/* Default Frontendmentor Styles Start*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Default Frontendmentor Styles End*/
+/* Desktop Design Start */
+@media only screen and (min-width: 768px) {
+  /* Header Section */
+  .header {
+    width: 100%;
+    height: 25rem;
+    background-image: linear-gradient(
+      to right,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+    border-bottom-left-radius: 150px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+  }
+  .back-image {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg-pattern-intro.svg);
+    background-size: auto;
+    background-position: 25% center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 150px;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+  }
+  .navbar-logo {
+    margin: 3rem 0rem 0 6rem;
+    cursor: pointer;
+  }
+  .left {
+    display: flex;
+  }
+  .navbar-item {
+    margin: 3.5rem 0 0 3rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar-item::after {
+    vertical-align: middle;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 0.9rem;
+    content: "\f107";
+  }
+  .navbar-item:hover::after {
+    vertical-align: middle;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 0.9rem;
+    content: "\f106";
+  }
+  .sub-item {
+    margin-top: 0.7rem;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    right: auto;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  .sub-item a {
+    color: #000000;
+    width: 6rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    flex-direction: column;
+    margin-bottom: 1.5rem !important;
+  }
+  .sub-item a:last-child {
+    margin-bottom: 0 !important;
+  }
+  .sub-item a:hover {
+    font-weight: bold;
+  }
+  .navbar-item p {
+    display: inline;
+  }
+  .navbar-item:hover .sub-item {
+    display: flex;
+  }
+  .right {
+    margin: 2rem 6rem 0 0rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .right-btn {
+    list-style-type: none;
+    display: flex;
+  }
+  .sign-up {
+    margin-left: 2rem;
+    background-color: #fff;
+    color: #ff525d;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .sign-up:hover {
+    background-color: #ff7a85;
+    color: #fff;
+    transition: all 0.2s;
+  }
+  .login {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .titles {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Overpass", sans-serif;
+    color: #fff;
+  }
+  .first-title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 0;
+    margin-bottom: 1.5rem;
+  }
+  .btns {
+    display: flex;
+    justify-content: center;
+    font-family: "Ubunto", sans-serif;
+    margin-top: 2rem;
+  }
+  .start-btn {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ff525d;
+    cursor: pointer;
+  }
+  .start-btn:focus {
+    outline: none;
+  }
+  .start-btn:hover {
+    background-color: #ff7a85;
+    color: #fff;
+    transition: all 0.2s;
+    border: none;
+  }
+  .learn-btn {
+    color: #fff;
+    margin-left: 1rem;
+    background-color: transparent;
+    height: 2.5rem;
+    width: 8rem;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .learn-btn:focus {
+    outline: none;
+  }
+  .learn-btn:hover {
+    background-color: #fff;
+    color: #ff525d;
+    transition: all 0.2s;
+  }
+  /* End of Header Section */
+
+  /* Main Section */
+  .main {
+    font-family: "Overpass", sans-serif;
+  }
+  .first-section {
+    height: 50rem;
+    width: 100%;
+    background-image: url(images/illustration-editor-desktop.svg);
+    padding-bottom: 8rem;
+    background-position: right -17.3rem center;
+    background-repeat: no-repeat;
+  }
+  .first-section_title {
+    text-align: center;
+    color: #1f3f5b;
+    font-size: 2.5rem;
+    padding-top: 5rem;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-left {
+    font-family: "Overpass", sans-serif;
+    margin-left: 9rem;
+    margin-top: 4rem;
+    text-align: justify;
+    width: 60%;
+  }
+  .flex-right {
+    width: 40%;
+  }
+  .detail-text {
+    width: 70%;
+    color: hsl(207, 13%, 34%);
+    line-height: 1.8rem;
+    /* font-weight: 600; */
+    /* font-size: .9rem; */
+  }
+  .heading {
+    color: #1f3f5b;
+    font-size: 1.8rem;
+  }
+  .split {
+    background-color: #2c2d3f;
+    background-image: url(images/bg-pattern-circles.svg),
+      linear-gradient(to right, rgb(44, 45, 63), hsl(237, 23%, 32%));
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -68% 80%;
+    height: 25rem;
+    width: 100%;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+  }
+  .split-flex-left {
+    width: 53%;
+  }
+  .split-flex-right {
+    width: 47%;
+  }
+  .phones {
+    margin: -4.5rem 0 0 4rem;
+  }
+  .split-heading {
+    padding-top: 4rem;
+    font-size: 2.3rem;
+  }
+  .split-text {
+    width: 70%;
+    line-height: 1.8rem;
+    color: #c8c8cb;
+  }
+  .second-section {
+    height: 100vh;
+    width: 100%;
+    padding-top: 15rem;
+    margin-top: 1rem;
+    background-image: url(images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -17.5rem 3.5rem;
+  }
+  .second-flex-right {
+    width: 55%;
+  }
+
+  .second-flex-left {
+    width: 45%;
+  }
+  .second-flex-left p {
+    width: 83%;
+  }
+  .footer {
+    font-family: "Overpass", sans-serif;
+    height: 20rem;
+    width: 100%;
+    background-color: #25252d;
+    border-top-right-radius: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10rem;
+  }
+  .footer-logo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .footer-product {
+    color: #fff;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .footer-product a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+    color: #c8c8cb;
+    font-size: 0.9rem;
+  }
+  .footer-company {
+    color: #fff;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .footer-company a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+    color: #c8c8cb;
+    font-size: 0.9rem;
+  }
+  .footer-connect {
+    color: #fff;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .footer-connect a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+    color: #c8c8cb;
+    font-size: 0.9rem;
+  }
+  .footer-company h4,
+  .footer-product h4,
+  .footer-connect h4 {
+    margin-bottom: 2rem;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .navsplit,
+  .mobile-btn {
+    display: none;
+  }
+}
+/* Desktop Design End */
+
+/* Mobile Design Start */
+@media only screen and (max-width: 767px) {
+  html {
+    width: 100% !important;
+  }
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  .header {
+    width: 100vw;
+    height: 38rem;
+    background-image: linear-gradient(
+      to top,
+      hsl(353, 100%, 62%),
+      hsl(13, 100%, 72%)
+    );
+    font-family: "Ubuntu", sans-serif;
+    border-bottom-left-radius: 150px;
+  }
+  .back-image {
+    background-image: url(images/bg-pattern-intro.svg);
+    background-size: 100rem;
+    background-position: 37% 38%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 150px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburger-menu,
+  .navbar-logo {
+    margin: 2rem 2rem 0 2rem;
+  }
+
+  /* Hamburger Menu Items Start */
+
+  .navbar {
+    background-color: #fff;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+    left: 5%;
+    text-align: center;
+    display: none;
+  }
+  .navbar-item {
+    color: #000000;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-heading::after {
+    vertical-align: middle;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 0.9rem;
+    content: "\f107";
+    color: #ff525d;
+    margin-left: 0.3rem;
+  }
+  .active::after {
+    vertical-align: middle;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 0.9rem;
+    content: "\f106";
+    color: #ff525d;
+    margin-left: 0.3rem;
+  }
+
+  .sub-item {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    width: 90%;
+    background-color: #f1f1f1;
+    font-size: 1rem;
+    position: relative;
+    border-radius: 7px;
+  }
+  .burger {
+    display: block;
+  }
+  .show {
+    display: flex;
+  }
+  .sub-item a {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #1f3f5b;
+  }
+  .sub-item:last-child{
+    margin-bottom: 2rem;
+  }
+  .navsplit {
+    width: 85%;
+    border-color: rgba(0, 0, 0, 0.05);
+  }
+
+  /* .navbar, */
+  .sign-up,
+  .login {
+    display: none;
+  }
+  .mobile-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+  }
+  .mobile-login {
+    margin-top: 1rem;
+    height: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+    color: #1f3f5b;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .mobile-sign-up{
+    text-decoration: none;
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: #fff;
+    width: 8.5rem;
+    height: 2.7rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  /* Hamburger Menu Items End */
+
+  .titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Overpass", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 3rem 1.5rem 0 1.5rem;
+  }
+  .first-title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .sub-title {
+    font-size: 1.4rem;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: center;
+    font-family: "Ubunto", sans-serif;
+    margin-top: 2rem;
+  }
+  .start-btn {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ff525d;
+    cursor: pointer;
+  }
+  .learn-btn {
+    color: #fff;
+    margin-left: 1rem;
+    background-color: transparent;
+    height: 2.5rem;
+    width: 8rem;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .learn-btn:focus,
+  .start-btn:focus {
+    outline: none;
+  }
+  .main {
+    font-family: "Overpass", sans-serif;
+  }
+  .first-section {
+    background-image: url(images/illustration-editor-mobile.svg);
+    background-position: center 4rem;
+    background-repeat: no-repeat;
+  }
+  .first-section_title {
+    text-align: center;
+    color: #1f3f5b;
+    margin: 5rem 0 25rem 0;
+  }
+  .heading {
+    margin: 0 2rem 0 2rem;
+    color: #1f3f5b;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .detail-text {
+    text-align: center;
+    margin: 1rem 1.8rem 0 1.8rem;
+    line-height: 1.8rem;
+    color: #1f3f5b;
+  }
+  .detail-text:last-child {
+    margin-bottom: 15rem;
+  }
+  .phones {
+    margin-top: -47%;
+    width: 100%;
+  }
+  .split {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url(images/bg-pattern-circles.svg),
+      linear-gradient(to right, rgb(44, 45, 63), hsl(237, 23%, 32%));
+    background-size: 70rem;
+    background-position: center 160%;
+    background-repeat: no-repeat;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+  }
+  .split-flex-right {
+    /* position: absolute; */
+    /* top: 19rem; */
+    padding-bottom: 10rem;
+  }
+  /* .split-flex-left{
+    background-image: url(images/illustration-phones.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100rem;
+    padding-top: 100rem;
+    background-position: center -5rem;
+  } */
+  .split-heading {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 0.9rem;
+  }
+  .split-text {
+    text-align: center;
+    color: #c8c8cb;
+    margin: 0 1.7rem 0 1.7rem;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+  }
+  .second-section {
+    background-image: url(images/illustration-laptop-mobile.svg);
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+    margin-bottom: 0;
+  }
+  .second-flex-left {
+    margin-top: 17rem;
+  }
+  .heading {
+    margin-top: 2rem;
+  }
+  .second-flex-left .detail-text:last-child {
+    margin-bottom: 5rem;
+  }
+  .footer {
+    font-family: "Overpass", sans-serif;
+    height: auto;
+    width: 100% !important;
+    background-color: #25252d;
+    border-top-right-radius: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo {
+    margin: 3rem 0 3rem 0;
+  }
+  .footer-product,
+  .footer-company,
+  .footer-connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer h4 {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .footer a {
+    color: #c8c8cb;
+    text-decoration: none;
+    margin-bottom: 0.7rem;
+  }
+  .footer a:last-child {
+    margin-bottom: 3rem;
+  }
+  
+}
+/* Mobile Design End */
